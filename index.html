@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ══════════════════════════════════════════════════════════════
+     CONTENT SECURITY POLICY
+     GitHub Pages cannot set HTTP response headers, so CSP is declared
+     in a meta tag. 'unsafe-inline' on style-src and script-src is
+     required because CSS and JS are inlined in this single-file build.
+     form-action permits submissions to Formspree.
+     ══════════════════════════════════════════════════════════════ -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+
+<!-- ══════════════════════════════════════════════════════════════
+     PRIMARY SEO METADATA
+     ══════════════════════════════════════════════════════════════ -->
+<title>Capture Revenue, Control Variance, and Submit Defensible CMS-64 Outputs &mdash; Certix Systems</title>
+<meta name="description" content="Certix Systems helps Medicaid programs capture revenue, control variance, and return defensible CMS-64 outputs in 5 business days. No system access or PHI required.">
+<meta name="author" content="Certix Systems LLC">
+<link rel="canonical" href="https://certixsystems.com/">
+
+<!-- ══════════════════════════════════════════════════════════════
+     OPEN GRAPH / TWITTER CARD
+     og-card.png is a 1200x630 static image shipped at repo root.
+     ══════════════════════════════════════════════════════════════ -->
+<meta property="og:site_name" content="Certix Systems">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://certixsystems.com/">
+<meta property="og:title" content="Certix Systems — Capture Revenue, Control Variance, Submit Defensible CMS-64 Outputs">
+<meta property="og:description" content="Capture revenue, control variance, and return defensible CMS-64 outputs without system access or PHI.">
+<meta property="og:image" content="https://certixsystems.com/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Certix Systems — Capture Revenue, Control Variance, Submit Defensible CMS-64 Outputs">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Certix Systems — Capture Revenue, Control Variance, Submit Defensible CMS-64 Outputs">
+<meta name="twitter:description" content="Capture revenue, control variance, and return defensible CMS-64 outputs without system access or PHI.">
+<meta name="twitter:image" content="https://certixsystems.com/og-card.png">
+<meta name="twitter:image:alt" content="Certix Systems — Capture Revenue, Control Variance, Submit Defensible CMS-64 Outputs">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 72 72' fill='none'%3E%3Crect x='3' y='3' width='66' height='66' rx='2' fill='none' stroke='%232D5A41' stroke-width='3'/%3E%3Cline x1='14' y1='16' x2='58' y2='16' stroke='%232D5A41' stroke-width='7' stroke-linecap='square'/%3E%3Cline x1='20' y1='28' x2='36' y2='28' stroke='%232D5A41' stroke-width='5' stroke-linecap='square'/%3E%3Cline x1='20' y1='38' x2='44' y2='38' stroke='%232D5A41' stroke-width='5' stroke-linecap='square'/%3E%3Cline x1='20' y1='48' x2='52' y2='48' stroke='%232D5A41' stroke-width='5' stroke-linecap='square'/%3E%3Cline x1='20' y1='58' x2='58' y2='58' stroke='%232D5A41' stroke-width='5' stroke-linecap='square'/%3E%3C/svg%3E">
+
+<!-- ══════════════════════════════════════════════════════════════
+     GOOGLE FONTS — preconnect to eliminate DNS+TLS handshake on
+     first font request and improve LCP.
+     ══════════════════════════════════════════════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cinzel:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=Michroma&display=swap" rel="stylesheet">
+
+<!-- ══════════════════════════════════════════════════════════════
+     JSON-LD STRUCTURED DATA — Organization
+     Establishes Certix as a real entity in Google Knowledge Graph
+     and is consumable by enterprise procurement workflows.
+     ══════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Certix Systems LLC",
+  "alternateName": "Certix Systems",
+  "url": "https://certixsystems.com/",
+  "logo": "https://certixsystems.com/logo.png",
+  "description": "Certix Systems helps Medicaid programs capture underreported federal share, control CMS-64 variance, and return defensible submission outputs aligned to OBA scoring and federal response requirements.",
+  "foundingDate": "2026",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "hello@certixsystems.com",
+    "availableLanguage": "English"
+  },
+  "naics": ["541519", "541611", "541618"],
+  "knowsAbout": [
+    "CMS-64 Quarterly Expenditure Reporting",
+    "CMS-64 Submission Defense",
+    "Federal Share Revenue Capture and Variance Attribution",
+    "Medicaid Financial Reporting",
+    "FMAP Calculation",
+    "Federal Medicaid Fiscal Reporting"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Certix Systems — CMS-64 Submission Defense Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "Certix Systems LLC"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "serviceType": "CMS-64 Submission Defense, Variance Attribution, and Revenue Capture",
+  "description": "Fixed-scope CMS-64 engagement focused on revenue capture, line-item variance attribution, and defensible submission outputs. Parallel-execution model: no MES configuration changes, no direct PHI handling required. Deliverables include submission workbook, exception log, variance narrative, and federal response documentation."
+}
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --green-900: #1A3A2A; --green-800: #234D38; --green-700: #2D6347; --green-600: #3A7D5C;
+    --green-500: #4A9B72; --green-400: #6DB88E; --green-300: #8FCCAA; --green-100: #E3F0E9; --green-50: #F0F7F3;
+    --black: #000000; --white: #FFFFFF; --off-white: #FAFBFC;
+    --gray-50: #F8F9FA; --gray-100: #F1F3F5; --gray-200: #E9ECEF; --gray-300: #DEE2E6;
+    --gray-400: #ADB5BD; --gray-500: #868E96; --gray-600: #6C757D; --gray-700: #495057; --gray-800: #343A40; --gray-900: #212529;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --trajan: 'Cinzel', 'Trajan Pro', 'Times New Roman', Times, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --max-w: 1140px;
+    /* Semantic tokens (flip with theme) */
+    --surface: var(--white);
+    --surface-alt: var(--gray-50);
+    --surface-success: var(--green-50);
+    --surface-dark: var(--green-900);
+    --ink: var(--green-900);
+    --ink-body: var(--gray-900);
+    --ink-muted: var(--gray-700);
+    --ink-accent: var(--green-700);
+    --on-dark: #FFFFFF;
+    --line: var(--gray-200);
+  }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { font-family: var(--sans); color: var(--ink-body); line-height: 1.7; background: var(--surface); -webkit-font-smoothing: antialiased; }
+
+  /* ═══ NAV ═══ */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,31,21,0.92); -webkit-backdrop-filter: blur(20px) saturate(140%); backdrop-filter: blur(20px) saturate(140%); border-bottom: 1px solid rgba(143,204,170,0.18); }
+  .nav-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; column-gap: 18px; padding: 0 32px; height: 72px; }
+  .logo { display: inline-flex; align-items: center; gap: 0; text-decoration: none; border: none; padding: 8px 12px 5px 12px; }
+  .logo-lockup { display: inline-flex; flex-direction: column; align-items: stretch; }
+  .logo-wordmark { display: inline-flex; align-items: baseline; font-family: 'Audiowide', sans-serif; font-size: 36px; line-height: 1; letter-spacing: 0.015em; color: #8FCCAA; -webkit-text-stroke: 0.5px rgba(13,31,21,0.97); }
+  .logo-xmark { display: inline-block; width: 0.682em; height: 0.72em; margin-left: 0.016em; vertical-align: baseline; overflow: visible; color: inherit; flex-shrink: 0; }
+  .logo-divider { display: none; }
+  .logo-sub { display: block; font-family: 'Inter', system-ui, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; color: rgba(143,204,170,0.95); margin-top: 2px; text-align: right; padding-right: 2px; }
+  .nav-links { display: flex; justify-content: center; align-items: center; gap: 28px; margin-right: 0; }
+  .nav-links a { color: rgba(255,255,255,0.78); text-decoration: none; font-size: 0.76rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.2px; }
+  .nav-links a:hover { color: #FFFFFF; }
+  .nav-cta { background: var(--green-800) !important; color: var(--white) !important; padding: 12px 18px; font-weight: 600 !important; font-size: 0.78rem !important; display: inline-flex !important; align-items: center; gap: 6px; transition: background 0.2s !important; letter-spacing: 0.6px; text-transform: uppercase; justify-self: end; white-space: nowrap; text-decoration: none; margin-right: 8px; border: 1px solid var(--green-500); }
+  .nav-cta:hover { background: var(--green-700) !important; }
+  .nav-cta svg { width: 14px; height: 14px; }
+  .theme-toggle { background: none; border: 1px solid rgba(255,255,255,0.22); cursor: pointer; padding: 3px 5px; display: flex; align-items: center; justify-content: center; transition: opacity 0.2s, border-color 0.2s; margin-left: 0; opacity: 0.55; border-radius: 3px; justify-self: end; }
+  .theme-toggle:hover { opacity: 0.85; border-color: rgba(255,255,255,0.45); }
+  .theme-toggle svg { width: 12px; height: 12px; stroke: rgba(255,255,255,0.6); fill: none; stroke-width: 2; }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--gray-900); }
+
+  /* ═══ SHARED ═══ */
+  section { padding: 72px 32px; }
+  .container { max-width: var(--max-w); margin: 0 auto; }
+  .section-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--green-600); margin-bottom: 16px; }
+  .section-title { font-family: var(--trajan); font-size: clamp(1.6rem, 3.2vw, 2.2rem); font-weight: 500; color: var(--ink-body); line-height: 1.2; margin-bottom: 14px; letter-spacing: 0.02em; text-transform: uppercase; }
+  .section-sub { font-size: 1rem; color: var(--gray-600); max-width: 580px; line-height: 1.75; font-weight: 300; }
+  .section-header { margin-bottom: 48px; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; font-size: 0.82rem; font-weight: 600; text-decoration: none; transition: all 0.25s; border: none; cursor: pointer; font-family: var(--sans); letter-spacing: 0.5px; text-transform: uppercase; }
+  .btn-primary { background: var(--green-800); color: var(--white); box-shadow: 0 6px 18px rgba(26,58,42,0.12); }
+  .btn-primary:hover { background: var(--green-700); }
+  .btn-outline { background: transparent; color: var(--gray-900); border: 1.5px solid var(--gray-300); }
+  .btn-outline:hover { border-color: var(--gray-900); }
+
+  /* ═══ HERO ═══ */
+  .hero { padding: 150px 32px 64px; background: var(--surface); }
+  .hero-grid { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 72px; align-items: center; }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 24px; font-size: 0.72rem; color: var(--green-600); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; }
+  .hero-badge::before { content: ''; width: 32px; height: 2px; background: var(--green-600); }
+  .hero h1 { font-family: var(--trajan); font-size: clamp(2rem, 4.4vw, 2.8rem); font-weight: 500; color: var(--ink-body); line-height: 1.2; margin-bottom: 20px; letter-spacing: 0.015em; text-transform: uppercase; }
+  .hero-left > p { font-size: 1rem; color: var(--gray-600); line-height: 1.75; margin-bottom: 28px; max-width: 490px; font-weight: 300; }
+  .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .hero-meta { font-size: 0.74rem; color: var(--gray-500); font-weight: 500; letter-spacing: 0.3px; border-top: 1px solid var(--gray-200); padding-top: 16px; line-height: 1.8; }
+
+  /* MES DASHBOARD */
+
+  /* ═══ TRUST + ICP BAR ═══ */
+  .trust-icp-grid { display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: start; }
+
+  /* ═══ WHERE PROGRAMS LOSE MONEY ═══ */
+  .failure-section { background: var(--surface-dark); padding: 72px 32px; }
+  .failure-section .section-label { color: var(--green-400); }
+  .failure-section .section-title { color: var(--white); }
+  .failure-section .section-sub { color: rgba(255,255,255,0.45); }
+  .failure-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.08); }
+  .failure-card { background: var(--surface-dark); padding: 32px 24px; }
+  .failure-card p { font-size: 0.86rem; color: rgba(255,255,255,0.6); line-height: 1.55; font-weight: 300; }
+  .failure-card .consequence { font-size: 0.74rem; font-weight: 600; color: #C4853A; margin-top: 12px; }
+
+  /* ═══ EXECUTION LAYER ═══ */
+  .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 1px solid var(--gray-200); }
+  .pillar { padding: 36px 28px; background: var(--surface); border-right: 1px solid var(--line); display: flex; flex-direction: column; }
+  .pillar:last-child { border-right: none; }
+  .pillar-num { font-family: var(--serif); font-size: 2rem; color: var(--green-100); margin-bottom: 16px; line-height: 1; }
+  .pillar h3 { font-family: var(--sans); font-size: 0.95rem; font-weight: 700; color: var(--ink-body); margin-bottom: 10px; line-height: 1.3; }
+  .pillar p { font-size: 0.84rem; color: var(--gray-600); line-height: 1.65; font-weight: 300; }
+  .pillar p { flex: 1; }
+  .pillar .outcome { font-size: 0.76rem; font-weight: 600; color: var(--green-700); margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--gray-200); line-height: 1.5; min-height: calc(14px + 1px + 0.76rem * 1.5 * 2); display: flex; align-items: flex-start; }
+
+  /* COMPLIANCE ROW */
+  .comp-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--gray-200); border: 1px solid var(--gray-200); margin-top: 48px; }
+  .comp-cell { background: var(--surface); padding: 28px 24px; }
+  .comp-ref { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--gray-500); margin-bottom: 8px; }
+  .comp-cell h3 { font-family: var(--sans); font-size: 0.9rem; font-weight: 700; color: var(--ink-body); margin-bottom: 6px; }
+  .comp-cell p { font-size: 0.82rem; color: var(--gray-600); line-height: 1.6; font-weight: 300; }
+
+  /* ═══ PROOF ═══ */
+  .proof { background: var(--surface-dark); color: var(--on-dark); }
+  .proof .section-label { color: var(--green-400); }
+  .proof-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+  .proof-left p { color: rgba(255,255,255,0.5); font-size: 0.92rem; line-height: 1.75; margin-bottom: 24px; font-weight: 300; }
+  .proof-scope { font-size: 0.82rem; color: var(--green-400); font-weight: 500; padding: 16px 0; border-top: 1px solid rgba(255,255,255,0.08); margin-top: 4px; margin-bottom: 24px; }
+  .proof-includes { list-style: none; margin-bottom: 24px; }
+  .proof-includes li { font-size: 0.84rem; color: rgba(255,255,255,0.55); padding: 5px 0 5px 18px; position: relative; font-weight: 300; }
+  .proof-includes li::before { content: ''; position: absolute; left: 0; top: 12px; width: 8px; height: 1px; background: var(--green-400); }
+  .timeline { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); padding: 32px 28px; }
+  .timeline-title { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--green-400); margin-bottom: 24px; }
+  .timeline-steps { position: relative; padding-left: 24px; }
+  .timeline-steps::before { content: ''; position: absolute; left: 4px; top: 4px; bottom: 4px; width: 1px; background: rgba(255,255,255,0.1); }
+  .tl-step { position: relative; margin-bottom: 22px; } .tl-step:last-child { margin-bottom: 0; }
+  .tl-step::before { content: ''; position: absolute; left: -22px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,0.1); border: 2px solid var(--green-400); }
+  .tl-step:last-child::before { background: var(--green-400); }
+  .tl-week { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.35); margin-bottom: 3px; }
+  .tl-desc { font-size: 0.82rem; color: rgba(255,255,255,0.5); font-weight: 300; line-height: 1.55; }
+
+  /* ═══ PROCUREMENT (condensed) ═══ */
+  .procurement { background: var(--surface-alt); border-top: 1px solid var(--line); padding: 64px 32px; }
+  .proc-compact { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .proc-info p { font-size: 0.95rem; color: var(--gray-700); line-height: 1.75; font-weight: 300; margin-bottom: 20px; }
+  .proc-table-card { background: var(--surface); border: 1px solid var(--line); overflow: hidden; }
+  .proc-table-header { background: var(--surface-dark); padding: 10px 20px; font-size: 0.64rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--green-400); }
+  .proc-table { width: 100%; border-collapse: collapse; }
+  .proc-table td { padding: 8px 20px; font-size: 0.82rem; border-bottom: 1px solid var(--gray-200); }
+  .proc-table td:first-child { font-weight: 700; color: var(--ink-body); width: 42%; background: var(--surface-alt); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; }
+  .proc-table td:last-child { color: var(--gray-700); font-weight: 300; }
+  .proc-table tr:last-child td { border-bottom: none; }
+
+  /* ═══ CONTACT ═══ */
+  .contact-page { background: var(--surface); border-top: 1px solid var(--line); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+  .contact-form { background: var(--surface-alt); border: 1px solid var(--line); padding: 28px 28px; }
+  .contact-form h3 { font-size: 0.95rem; font-weight: 700; color: var(--ink-body); margin-bottom: 16px; }
+  .form-group { margin-bottom: 12px; }
+  .form-group label { display: block; font-size: 0.76rem; font-weight: 600; color: var(--gray-700); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 9px 12px; border: 1px solid var(--gray-300); font-family: var(--sans); font-size: 0.84rem; color: var(--ink-body); background: var(--surface); transition: border-color 0.2s; outline: none; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--green-600); }
+  .form-group textarea { resize: vertical; min-height: 72px; }
+  .form-submit { width: 100%; padding: 12px; border: none; background: var(--green-800); color: var(--white); font-family: var(--sans); font-size: 0.78rem; font-weight: 600; cursor: pointer; transition: background 0.2s; margin-top: 6px; text-transform: uppercase; letter-spacing: 1px; }
+  .form-submit:hover { background: var(--green-700); }
+  .contact-info { padding-top: 4px; }
+  .contact-info h3 { font-size: 1rem; font-weight: 700; color: var(--ink-body); margin-bottom: 10px; }
+  .contact-info > p { color: var(--gray-600); font-size: 0.9rem; line-height: 1.7; margin-bottom: 32px; font-weight: 300; }
+  .contact-block { margin-bottom: 24px; }
+  .contact-block h4 { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: var(--gray-400); margin-bottom: 5px; }
+  .contact-block a, .contact-block p { font-size: 0.9rem; color: var(--gray-900); text-decoration: none; font-weight: 500; }
+  .contact-block a:hover { color: var(--green-700); }
+  .trust-anchor { background: var(--surface-alt); border: 1px solid var(--line); padding: 20px; margin-top: 8px; }
+  .trust-anchor p { font-size: 0.82rem !important; color: var(--gray-600) !important; font-weight: 300 !important; line-height: 1.6; }
+
+  /* ═══ FINAL CTA ═══ */
+  .final-cta { text-align: center; padding: 72px 32px; background: var(--surface-dark); }
+  .final-cta-inner { max-width: 560px; margin: 0 auto; }
+  .final-cta h2 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.4rem); color: var(--white); margin-bottom: 14px; letter-spacing: -0.3px; }
+  .final-cta p { color: rgba(255,255,255,0.5); margin-bottom: 28px; font-size: 0.95rem; line-height: 1.7; font-weight: 300; }
+  .final-cta .btn-primary { background: var(--green-500); }
+  .final-cta .btn-primary:hover { background: var(--green-400); }
+  .final-cta .btn-outline { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.15); }
+  .final-cta .btn-outline:hover { border-color: rgba(255,255,255,0.4); color: var(--white); }
+
+  /* ═══ FOOTER ═══ */
+  footer { background: var(--surface-dark); padding: 32px 32px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  footer p { font-size: 0.76rem; color: rgba(255,255,255,0.3); font-weight: 300; }
+  footer a { color: rgba(255,255,255,0.45); text-decoration: none; font-size: 0.76rem; font-weight: 500; letter-spacing: 0.3px; }
+  footer a:hover { color: var(--white); }
+  .footer-links { display: flex; gap: 28px; }
+
+  /* ═══ DARK MODE ═══ */
+  /* Palette tokens stay fixed. Only semantic tokens and grays flip. */
+  [data-theme="dark"] {
+    --gray-50: #1A1F1C; --gray-100: #1E2420; --gray-200: #2A312C; --gray-300: #3A4240;
+    --gray-400: #6C7570; --gray-500: #8A938E; --gray-600: #A8B0AB; --gray-700: #C4CAC7; --gray-800: #DEE2E0; --gray-900: #F1F3F5;
+    --surface: #111714;
+    --surface-alt: #1A1F1C;
+    --surface-success: #1A2E22;
+    --surface-dark: #0D1F15;
+    --ink: #8FCCAA;
+    --ink-body: #F1F3F5;
+    --ink-muted: #C4CAC7;
+    --ink-accent: #8FCCAA;
+    --line: #2A312C;
+  }
+  /* Headings flip to light text (accent tokens handle dark-mode readability on light surfaces) */
+  [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] h4 { color: var(--ink-body); }
+  [data-theme="dark"] p { color: var(--ink-muted); }
+  [data-theme="dark"] .section-title { color: var(--ink-body); }
+  [data-theme="dark"] .section-label { color: var(--ink); }
+  [data-theme="dark"] .section-sub { color: var(--ink-muted); }
+  [data-theme="dark"] .hero h1 { color: var(--ink-body); }
+  [data-theme="dark"] .hero-badge { color: var(--ink); }
+  [data-theme="dark"] .hero-badge::before { background: var(--ink); }
+  [data-theme="dark"] .hero-meta { color: var(--gray-500); border-top-color: var(--line); }
+  [data-theme="dark"] .pillar h3 { color: var(--ink-body); }
+  [data-theme="dark"] .pillar .outcome { color: var(--ink); border-top-color: var(--line); }
+  [data-theme="dark"] .comp-cell h3 { color: var(--ink-body); }
+  [data-theme="dark"] .comp-row { background: var(--line); border-color: var(--line); }
+  [data-theme="dark"] .contact-form h3 { color: var(--ink-body); }
+  [data-theme="dark"] .contact-info h3 { color: var(--ink-body); }
+  [data-theme="dark"] .contact-block a { color: var(--ink-body); }
+  [data-theme="dark"] .proof-scope { color: var(--ink); }
+  [data-theme="dark"] .timeline-title { color: var(--ink); }
+  [data-theme="dark"] .failure-section .section-label { color: var(--ink); }
+  [data-theme="dark"] .nav-links a { color: rgba(255,255,255,0.78); }
+  [data-theme="dark"] .nav-links a:hover { color: #FFFFFF; }
+  [data-theme="dark"] .nav-links.open { background: var(--surface); border-bottom-color: var(--line); }
+  [data-theme="dark"] .logo-wordmark { color: var(--ink); -webkit-text-stroke: 0.5px rgba(13,31,21,0.97); }
+  [data-theme="dark"] .btn-outline { color: var(--ink-muted); border-color: var(--gray-300); }
+  [data-theme="dark"] .btn-outline:hover { border-color: var(--gray-600); color: var(--ink-body); }
+  [data-theme="dark"] .hamburger span { background: var(--ink-body); }
+  /* Hero dashboard preview — locked-palette card; always renders in its fixed palette */
+  .hero-preview { color-scheme: light; }
+
+  /* ═══ RESPONSIVE ═══ */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .pillar-grid { grid-template-columns: 1fr 1fr; }
+    .comp-row { grid-template-columns: 1fr; }
+    .failure-grid { grid-template-columns: 1fr 1fr; }
+    .proof-inner, .proc-compact, .contact-grid { grid-template-columns: 1fr; }
+    .trust-icp-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+  @media (max-width: 640px) {
+    .zero-dep-grid { grid-template-columns: 1fr 1fr !important; }
+  }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--surface); padding: 24px 32px; gap: 16px; border-bottom: 1px solid var(--line); }
+    .hero { padding: 136px 24px 56px; }
+    section { padding: 56px 24px; }
+    .failure-grid, .pillar-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<!-- Clickjacking mitigation: GitHub Pages cannot send X-Frame-Options,
+     and frame-ancestors is ignored in meta CSP. JS frame-buster is
+     best-effort but covers the common case of transparent overlay
+     clickjacking on buyers who click a link from an email. -->
+<script>if (self !== top) { top.location = self.location; }</script>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-lockup">
+        <span class="logo-wordmark">CERTI<svg class="logo-xmark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="xdiag1" gradientUnits="userSpaceOnUse" x1="9" y1="9" x2="91" y2="91"><stop offset="0" stop-color="#2D6347"/><stop offset="1" stop-color="#8FCCAA"/></linearGradient><linearGradient id="xdiag2" gradientUnits="userSpaceOnUse" x1="9" y1="91" x2="91" y2="9"><stop offset="0" stop-color="#2D6347"/><stop offset="1" stop-color="#8FCCAA"/></linearGradient></defs><line x1="9" y1="91" x2="91" y2="9" stroke="url(#xdiag2)" stroke-width="22" stroke-linecap="butt"/><line x1="9" y1="9" x2="91" y2="91" stroke="url(#xdiag1)" stroke-width="22" stroke-linecap="butt"/></svg></span>
+        <span class="logo-divider"></span>
+        <span class="logo-sub">Systems</span>
+      </span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#execution">How It Works</a>
+      <a href="#offers">Engagement Models</a>
+      <a href="certix-sample-output.html">Output Example</a>
+    </div>
+    <a href="#contact" class="nav-cta">Submit CMS-64 Data Securely</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <svg class="moon-icon" style="display:none;" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+    </button>
+    <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ═══ 1. HERO ═══ -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <h1>Capture revenue, control variance, and submit defensible CMS-64 outputs.</h1>
+      <p style="font-size:1.02rem; color:var(--ink); font-weight:700; margin:0 0 8px 0; max-width:560px; padding:10px 14px; border-left:3px solid var(--green-500); background:var(--surface-success); line-height:1.6;">Defensible CMS-64 output in 5 business days. No system access. No PHI.</p>
+      <p style="font-size:0.78rem; color:var(--gray-500); font-weight:400; margin:0 0 4px 0;">Recover underreported federal share, attribute variance at line level, and return submission-ready outputs aligned to OBA scoring and federal response requirements.</p>
+      <div class="hero-buttons" style="margin-top:10px;">
+        <a href="#contact" class="btn btn-primary">Submit CMS-64 Data Securely</a>
+      </div>
+      <p style="font-size:0.74rem; color:var(--gray-500); font-weight:500; margin:8px 0 0 0; max-width:520px; line-height:1.55;">Protects federal funding, supports OBA expenditure scoring, and strengthens submission defensibility.</p>
+      <p style="font-size:0.76rem; color:var(--gray-700); font-weight:600; margin:10px 0 0 0; max-width:520px; line-height:1.55;">Captures underreported federal share tied to prior CMS-64 submissions.</p>
+      <p style="font-size:0.72rem; color:var(--gray-400); font-weight:600; margin:6px 0 0 0; letter-spacing:0.5px; text-transform:uppercase;">Not reporting software. Not generic analytics. Not consulting labor.</p>
+    </div>
+    <div class="hero-right">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; gap:12px;">
+        <div style="font-size:0.62rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--gray-500);">Submission Defense Preview</div>
+      </div>
+      <a href="certix-sample-output.html" class="hero-preview" style="text-decoration:none; color:inherit; display:block;">
+      <div style="background:#FFFFFF; border:1px solid #DEE2E6; border-radius:6px; box-shadow:0 4px 24px rgba(26,58,42,0.08); overflow:hidden; font-family:'Inter',system-ui,sans-serif; position:relative;">
+        <!-- Overlay caption -->
+        <div style="position:absolute; top:22px; right:14px; z-index:5; background:#E8F7EE; color:#1A3A2A; padding:12px 16px; border:1px solid #A8DCBF; border-left:3px solid #4A9B72; border-radius:6px; max-width:240px; box-shadow:0 10px 24px rgba(26,58,42,0.14);">
+          <div style="font-size:0.66rem; font-weight:700; letter-spacing:0.3px; line-height:1.45; color:#1A3A2A;">Submission Defense Output</div>
+          <div style="font-size:0.62rem; font-weight:500; line-height:1.55; margin-top:4px; color:#234D38; opacity:0.7;">Open sample output &rarr;</div>
+        </div>
+        <!-- Title bar -->
+        <div style="background:#1A3A2A; color:#FFFFFF; padding:10px 16px; font-size:0.72rem; font-weight:600; letter-spacing:0.4px; display:flex; align-items:center; justify-content:space-between;">
+          <span style="color:#FFFFFF;">Submission Defense Output</span>
+          <span style="font-size:0.62rem; font-weight:600; opacity:0.75; letter-spacing:1px; color:#FFFFFF;">Line-level attribution</span>
+        </div>
+        <!-- Status bar -->
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); border-bottom:1px solid #E9ECEF; background:#FFFFFF;">
+          <div style="padding:12px 14px; border-right:1px solid #E9ECEF;">
+            <div style="font-size:0.55rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#868E96;">Validations</div>
+            <div style="font-size:0.95rem; font-weight:700; color:#1A3A2A; margin-top:2px;">16<span style="color:#ADB5BD; font-weight:500;"> / 16</span></div>
+          </div>
+          <div style="padding:12px 14px; border-right:1px solid #E9ECEF;">
+            <div style="font-size:0.55rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#868E96;">Passed</div>
+            <div style="font-size:0.95rem; font-weight:700; color:#1F7A4D; margin-top:2px;">16</div>
+          </div>
+          <div style="padding:12px 14px; border-right:1px solid #E9ECEF;">
+            <div style="font-size:0.55rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#868E96;">Warnings</div>
+            <div style="font-size:0.95rem; font-weight:700; color:#B5811A; margin-top:2px;">0</div>
+          </div>
+          <div style="padding:12px 14px;">
+            <div style="font-size:0.55rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#868E96;">Failed</div>
+            <div style="font-size:0.95rem; font-weight:700; color:#ADB5BD; margin-top:2px;">0</div>
+          </div>
+        </div>
+        <!-- Reconciliation table -->
+        <div style="padding:14px 16px 12px 16px; background:#FFFFFF;">
+          <div style="font-size:0.58rem; font-weight:700; text-transform:uppercase; letter-spacing:1.2px; color:#868E96; margin-bottom:8px;">Submission Defense &mdash; Federal Share Computation</div>
+          <table style="width:100%; font-size:0.7rem; border-collapse:collapse; color:#343A40;">
+            <tr style="border-bottom:1px solid #E9ECEF; color:#868E96; font-weight:600;"><td style="padding:6px 0; text-align:left;">Line Item</td><td style="padding:6px 0; text-align:right;">Federal</td><td style="padding:6px 0; text-align:right;">State</td><td style="padding:6px 0; text-align:right;">Total</td></tr>
+            <tr style="border-bottom:1px solid #F1F3F5;"><td style="padding:6px 0; color:#343A40;">Inpatient Hospital</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">1,847.2</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">1,288.4</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:600; color:#343A40;">3,135.6</td></tr>
+            <tr style="border-bottom:1px solid #F1F3F5;"><td style="padding:6px 0; color:#343A40;">Nursing Facility</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">812.5</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">566.7</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:600; color:#343A40;">1,379.2</td></tr>
+            <tr style="border-bottom:1px solid #F1F3F5;"><td style="padding:6px 0; color:#343A40;">Prescribed Drugs</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">1,104.6</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">770.3</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:600; color:#343A40;">1,874.9</td></tr>
+            <tr style="border-bottom:1px solid #F1F3F5;"><td style="padding:6px 0; color:#343A40;">HCBS Waiver Services</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">1,326.0</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; color:#343A40;">924.6</td><td style="padding:6px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:600; color:#343A40;">2,250.6</td></tr>
+            <tr style="background:#F8F9FA;"><td style="padding:8px 0; font-weight:700; color:#1A3A2A;">Grand Total</td><td style="padding:8px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:700; color:#1A3A2A;">7,659.4</td><td style="padding:8px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:700; color:#1A3A2A;">5,341.2</td><td style="padding:8px 0; text-align:right; font-variant-numeric:tabular-nums; font-weight:700; color:#1A3A2A;">13,000.6</td></tr>
+          </table>
+        </div>
+        <!-- Validation log -->
+        <div style="padding:10px 16px 16px 16px; border-top:1px solid #E9ECEF; background:#FFFFFF;">
+          <div style="font-size:0.58rem; font-weight:700; text-transform:uppercase; letter-spacing:1.2px; color:#868E96; margin-bottom:8px;">Audit Validation Log</div>
+          <div style="font-family:'SF Mono',Menlo,Consolas,monospace; font-size:0.64rem; line-height:1.9; color:#343A40;">
+            <div style="color:#343A40;"><span style="color:#1F7A4D; font-weight:700;">PASS</span> &nbsp;Category-level totals reconcile to CMS-64 lines</div>
+            <div style="color:#343A40;"><span style="color:#1F7A4D; font-weight:700;">PASS</span> &nbsp;Federal/state split aligns with FMAP</div>
+            <div style="color:#343A40;"><span style="color:#1F7A4D; font-weight:700;">PASS</span> &nbsp;Prior quarter carry-forward verified</div>
+            <div style="color:#343A40;"><span style="color:#1F7A4D; font-weight:700;">PASS</span> &nbsp;Prior period adjustments attributed to CMS-64.9</div>
+            <div style="color:#343A40;"><span style="color:#1F7A4D; font-weight:700;">PASS</span> &nbsp;Inpatient Hospital QoQ variance within tolerance</div>
+            <div style="color:#343A40;"><span style="color:#1F7A4D; font-weight:700;">PASS</span> &nbsp;Submission defense package manifest &mdash; ready</div>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RISK REDUCTION STRIP ═══ -->
+<section style="padding:18px 32px; border-bottom:1px solid var(--line); text-align:center;">
+  <div class="container" style="display:flex; justify-content:center; gap:32px; flex-wrap:wrap;">
+    <span style="font-size:0.75rem; color:var(--gray-600); font-weight:500;">No system access</span>
+    <span style="font-size:0.75rem; color:var(--gray-600); font-weight:500;">No PHI</span>
+    <span style="font-size:0.75rem; color:var(--gray-600); font-weight:500;">No security review delays</span>
+    <span style="font-size:0.82rem; color:var(--ink); font-weight:700; letter-spacing:0.3px;">Execution begins immediately — no onboarding cycle required</span>
+  </div>
+</section>
+
+<!-- ═══ FEDERAL SCRUTINY STRIP ═══ -->
+<section style="background:var(--surface-dark); padding:48px 32px; border-bottom:1px solid rgba(255,255,255,0.06);">
+  <div class="container">
+    <div style="max-width:760px; margin:0 auto;">
+      <div style="font-size:0.65rem; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--green-400); margin-bottom:14px;">Federal Scrutiny Has Changed</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="color:var(--green-400); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:rgba(255,255,255,0.75); line-height:1.55;">60-day federal response windows are now enforced on flagged submissions</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="color:var(--green-400); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:rgba(255,255,255,0.75); line-height:1.55;">OBA scoring ties reporting quality directly to federal funding outcomes</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="color:var(--green-400); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:rgba(255,255,255,0.75); line-height:1.55;">T-MSIS / CMS-64 mismatches now trigger automated federal review</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="color:var(--green-400); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:rgba(255,255,255,0.75); line-height:1.55;">Post-submission "pay-and-chase" models are no longer viable under federal enforcement</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SUBMISSION RISK ═══ -->
+<section style="background:var(--surface); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:56px 32px;">
+  <div class="container">
+    <div style="max-width:760px; margin:0 auto;">
+      <div style="font-size:0.65rem; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--green-700); margin-bottom:14px;">Submission Risk Surface</div>
+      <h2 style="font-family:var(--trajan); font-size:clamp(1.4rem,2.6vw,1.8rem); font-weight:500; color:var(--ink); line-height:1.25; letter-spacing:0.02em; text-transform:uppercase; margin:0 0 24px 0;">
+        Submission risk now directly impacts federal funding release
+      </h2>
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">Federal share variances trigger funding deferrals</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">OBA scoring failures reduce contract performance ratings</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">Unresolved discrepancies escalate to corrective action plans</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0;">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">Response windows compress to 60 days with full audit expectations</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHO THIS IS FOR ═══ -->
+<section style="background:var(--surface-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:14px 32px; text-align:center;">
+  <div class="container">
+    <p style="font-size:0.78rem; color:var(--gray-700); font-weight:500;">
+      Medicaid program directors, delivery leads, and T-MSIS/reporting owners within prime contractors.
+    </p>
+  </div>
+</section>
+
+<!-- ═══ CMS-64 VARIANCE ANALYSIS ═══ -->
+<section id="recapture" style="background:var(--surface-success); border-top:3px solid var(--green-500); border-bottom:1px solid var(--line); padding:72px 32px;">
+  <div class="container">
+    <div style="max-width:760px; margin:0 auto;">
+      <div style="font-size:0.65rem; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--green-700); margin-bottom:14px;">
+        Revenue Capture &amp; Variance Defense
+      </div>
+      <h2 style="font-family:var(--trajan); font-size:clamp(1.5rem,2.8vw,2rem); font-weight:500; color:var(--ink); line-height:1.25; letter-spacing:0.02em; text-transform:uppercase; margin:0 0 18px 0;">
+        Capture Revenue. Control Variance. Defend Every Line Item.
+      </h2>
+      <p style="font-size:1rem; color:var(--gray-700); line-height:1.7; margin:0 0 14px 0; max-width:640px; font-weight:400;">
+        Recover underreported federal share, identify and attribute variance at line level, and return defensible CMS-64 outputs before submission triggers funding deferrals, OBA penalties, or corrective action plans.
+      </p>
+      <p style="font-size:0.78rem; color:var(--gray-600); margin-bottom:8px;">
+        Required inputs: CMS-64 extracts, supporting schedules, and prior-quarter reports.
+      </p>
+      <p style="font-size:0.78rem; color:var(--gray-600); margin-bottom:18px;">
+        Delivered as a submission-defense package with line-item attribution and variance narratives.
+      </p>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:28px;">
+
+        <!-- WHAT WE DETECT -->
+        <div style="background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--green-600); padding:28px 28px 24px;">
+          <div style="font-size:0.62rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--green-600); margin-bottom:16px;">What We Detect &amp; Recover</div>
+          <div style="display:flex; flex-direction:column; gap:0;">
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Underreported federal share (recoverable revenue)</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">FMAP misalignment</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Category misclassification</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Prior-period adjustment leakage</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Line-level allocation errors</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0;">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">T-MSIS / CMS-64 cross-submission mismatches</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHAT YOU RECEIVE -->
+        <div style="background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--green-600); padding:28px 28px 24px;">
+          <div style="font-size:0.62rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--green-600); margin-bottom:16px;">What You Receive</div>
+          <div style="display:flex; flex-direction:column; gap:0;">
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Federal share variance quantified, attributed, and defensible by line item</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Submission workbook (defense-ready, audit-documented)</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Reconciled CMS-64 totals ready for submission</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Line-item variance attribution and exception support</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0;">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Quantified federal share variance exposure</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; padding:14px 0;">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.88rem; color:var(--ink-body); font-weight:400;">Variance narratives and exception logs structured for federal audit defense and response submission</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CLOSING LINE -->
+      <p style="font-size:0.95rem; font-weight:600; color:var(--ink); margin-top:28px; padding-left:14px; border-left:3px solid var(--green-500);">
+        Revenue captured. Variance controlled. Every line item defensible before submission.
+      </p>
+
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 3.65 WHO THIS IS FOR ═══ -->
+<section id="who-for" style="background:var(--surface); padding:88px 32px;">
+  <div class="container">
+    <div style="max-width:760px; margin:0 auto 44px auto; text-align:center;">
+      <div style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:2.5px; color:var(--green-700); margin-bottom:14px;">
+        Where Certix Fits
+      </div>
+      <h2 style="font-family:var(--trajan); font-size:clamp(1.5rem,2.6vw,2rem); font-weight:500; color:var(--ink); line-height:1.25; letter-spacing:0.02em; text-transform:uppercase; margin:0 0 14px 0;">
+        Built for live Medicaid reporting programs under delivery pressure.
+      </h2>
+      <p style="font-size:0.92rem; color:var(--gray-600); line-height:1.65; margin:0; max-width:600px; margin-left:auto; margin-right:auto;">
+        Engagements are scoped only where the work is reporting delivery on live programs.
+      </p>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:1040px; margin:0 auto;">
+
+      <!-- FOR CARD -->
+      <div style="background:var(--surface-success); border:1px solid var(--line); border-left:4px solid var(--ink-accent); padding:36px 38px 32px 38px; position:relative;">
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px; padding-bottom:18px; border-bottom:1px solid rgba(74,155,114,0.22);">
+          <div style="width:36px; height:36px; border-radius:50%; background:var(--ink-accent); display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <div>
+            <div style="font-size:0.62rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--ink-accent); margin-bottom:2px;">In Scope</div>
+            <div style="font-size:1.05rem; font-weight:700; color:var(--ink-body); font-family:var(--sans);">Where Certix engages</div>
+          </div>
+        </div>
+        <div style="font-size:0.9rem; color:var(--ink-body); line-height:1.65;">
+          <div style="display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px solid rgba(74,155,114,0.18);">
+            <span style="color:var(--ink-accent); font-weight:700; flex-shrink:0; font-size:1rem; line-height:1.3;">&rarr;</span>
+            <span>Prime contractors delivering Medicaid programs</span>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px solid rgba(74,155,114,0.18);">
+            <span style="color:var(--ink-accent); font-weight:700; flex-shrink:0; font-size:1rem; line-height:1.3;">&rarr;</span>
+            <span>CMS-64 / T-MSIS accountable teams</span>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:14px; padding:12px 0;">
+            <span style="color:var(--ink-accent); font-weight:700; flex-shrink:0; font-size:1rem; line-height:1.3;">&rarr;</span>
+            <span>Delivery leaders responsible for CMS reporting accuracy</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOT FOR CARD -->
+      <div style="background:var(--surface-alt); border:1px solid var(--line); border-left:4px solid var(--gray-400); padding:36px 38px 32px 38px; position:relative;">
+        <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px; padding-bottom:18px; border-bottom:1px solid var(--gray-200);">
+          <div style="width:36px; height:36px; border-radius:50%; background:var(--gray-300); display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </div>
+          <div>
+            <div style="font-size:0.62rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--gray-600); margin-bottom:2px;">Out of Scope</div>
+            <div style="font-size:1.05rem; font-weight:700; color:var(--gray-700); font-family:var(--sans);">Where Certix does not engage</div>
+          </div>
+        </div>
+        <div style="font-size:0.9rem; color:var(--gray-600); line-height:1.65;">
+          <div style="display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px solid var(--gray-200);">
+            <span style="color:var(--gray-400); font-weight:700; flex-shrink:0; font-size:1rem; line-height:1.3;">&mdash;</span>
+            <span>States procuring new systems</span>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:14px; padding:12px 0; border-bottom:1px solid var(--gray-200);">
+            <span style="color:var(--gray-400); font-weight:700; flex-shrink:0; font-size:1rem; line-height:1.3;">&mdash;</span>
+            <span>Teams looking for analytics dashboards</span>
+          </div>
+          <div style="display:flex; align-items:flex-start; gap:14px; padding:12px 0;">
+            <span style="color:var(--gray-400); font-weight:700; flex-shrink:0; font-size:1rem; line-height:1.3;">&mdash;</span>
+            <span>Long procurement cycles</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHEN ENGAGEMENT BEGINS + EXECUTION CONSTRAINT ═══ -->
+<section style="background:var(--surface-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:72px 32px;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; max-width:960px; margin:0 auto;">
+
+      <!-- WHEN ENGAGEMENT BEGINS -->
+      <div style="background:var(--surface); border:1px solid var(--line); border-top:3px solid #C4853A; padding:0; overflow:hidden;">
+        <div style="padding:28px 32px 24px 32px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:#FEF3C7; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C4853A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div style="font-size:0.65rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#C4853A;">When Engagement Begins</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0;">
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:#C4853A; flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">Correction windows are closing</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:#C4853A; flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">Reconciliation does not tie</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:#C4853A; flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">CMS deadlines are approaching</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0;">
+              <div style="width:6px; height:6px; border-radius:50%; background:#C4853A; flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">Internal team is overloaded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENGAGEMENT STRUCTURE -->
+      <div style="background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--green-600); padding:0; overflow:hidden;">
+        <div style="padding:28px 32px 24px 32px;">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+            <div style="width:32px; height:32px; border-radius:50%; background:var(--green-100); display:inline-flex; align-items:center; justify-content:center; flex-shrink:0;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--green-600)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div style="font-size:0.65rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--green-600);">Engagement Structure</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:0;">
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">No system access required</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">No MES integration</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid var(--gray-200);">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">No direct PHI handling</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 0;">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--green-600); flex-shrink:0;"></div>
+              <span style="font-size:0.9rem; color:var(--ink-body); font-weight:600;">Fixed 5-day delivery window</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WHERE PROGRAMS LOSE MONEY ═══ -->
+<section class="failure-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Federal Exposure</div>
+      <div style="font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:500; margin-bottom:14px;">These are recoverable. We capture the revenue, control the variance, and defend the output.</div>
+      <div class="section-title" style="color:var(--white);">Where Programs Lose Revenue and Fail Federal Review</div>
+    </div>
+    <div class="failure-grid">
+      <div class="failure-card">
+        <p>Federal share underreporting. Expenditures eligible for higher federal matching go unclaimed because FMAP rates are applied to the wrong categories.</p>
+        <div class="consequence">Lost federal reimbursement every cycle.</div>
+      </div>
+      <div class="failure-card">
+        <p>FMAP misalignment. Federal matching percentages don't match actual expenditure categorization. The variance compounds silently across quarters.</p>
+        <div class="consequence">Systematic underpayment. Recoverable but unclaimed.</div>
+      </div>
+      <div class="failure-card">
+        <p>Category misclassification. Expenditures reported under incorrect CMS-64 line items. Federal share calculated against wrong rates.</p>
+        <div class="consequence">Recoverable federal share buried in misclassified data.</div>
+      </div>
+      <div class="failure-card">
+        <p>Prior-period adjustment leakage. Adjustments from prior quarters not reconciled to state accounting. Incomplete carry-forward creates compounding funding gaps.</p>
+        <div class="consequence">Cumulative loss. Grows every quarter left unaddressed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 2.45 LATEST EXECUTION OUTPUT (PROOF BRIDGE) ═══ -->
+<section style="padding:28px 32px;border-top:1px solid var(--gray-200);">
+  <div class="container">
+    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div style="font-size:0.88rem; font-weight:600; color:var(--ink-body);">Representative output. Revenue captured. Variance controlled. All validation checks passed.</div>
+      <a href="certix-sample-output.html" style="font-size:0.78rem; color:var(--green-700); text-decoration:underline; font-weight:600;">View sample output &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 2.5 BUY-THIS-FIRST STRIP ═══ -->
+<section style="background:var(--surface-dark); padding:36px 32px; border-top:3px solid var(--green-500);">
+  <div class="container">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; margin-bottom:20px;">
+      <div>
+        <div style="font-size:0.6rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--green-400); margin-bottom:6px;">Engagement Structures</div>
+        <div style="font-family:var(--serif); font-size:1.4rem; font-weight:500; color:var(--white); letter-spacing:-0.3px;">Fixed-scope execution engagements.</div>
+        <div style="font-size:0.78rem; color:rgba(255,255,255,0.72); font-weight:500; margin-top:10px; max-width:640px; line-height:1.6; padding-left:12px; border-left:2px solid var(--green-500);">Most revenue loss and compliance failures surface after submission — when correction cost is highest and federal review exposure is already locked in.</div>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1px; background:var(--green-800); border:1px solid var(--green-800);">
+
+      <a href="#offer-01" style="display:block; padding:22px 24px; background:var(--surface-dark); text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#1F3F2D'" onmouseout="this.style.background='#1A3A2A'">
+        <div style="font-family:var(--serif); font-size:1.05rem; font-weight:500; color:var(--white); margin-bottom:6px; letter-spacing:-0.2px;">Per Submission</div>
+        <div style="font-size:0.78rem; color:#A8DCBF; font-weight:600; line-height:1.5;">Fixed-fee revenue capture, variance control, and defensible output. 5-day turnaround.</div>
+        <div style="font-size:0.7rem; font-weight:600; letter-spacing:1px; color:var(--green-400); margin-top:14px;">Submit CMS-64 Data &rarr;</div>
+      </a>
+
+      <a href="#offer-02" style="display:block; padding:22px 24px; background:var(--surface-dark); text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#1F3F2D'" onmouseout="this.style.background='#1A3A2A'">
+        <div style="font-family:var(--serif); font-size:1.05rem; font-weight:500; color:var(--white); margin-bottom:6px; letter-spacing:-0.2px;">Migration Support</div>
+        <div style="font-size:0.78rem; color:#A8DCBF; font-weight:600; line-height:1.5;">Mapping and reconciliation for new reporting templates and T-MSIS transitions.</div>
+        <div style="font-size:0.7rem; font-weight:600; letter-spacing:1px; color:var(--green-400); margin-top:14px;">Submit CMS-64 Data &rarr;</div>
+      </a>
+
+      <a href="#offer-03" style="display:block; padding:22px 24px; background:var(--surface-dark); text-decoration:none; transition:background 0.2s;" onmouseover="this.style.background='#1F3F2D'" onmouseout="this.style.background='#1A3A2A'">
+        <div style="font-family:var(--serif); font-size:1.05rem; font-weight:500; color:var(--white); margin-bottom:6px; letter-spacing:-0.2px;">CAP / Recovery Support</div>
+        <div style="font-size:0.78rem; color:#A8DCBF; font-weight:600; line-height:1.5;">Targeted variance attribution for programs under federal review or corrective action.</div>
+        <div style="font-size:0.7rem; font-weight:600; letter-spacing:1px; color:var(--green-400); margin-top:14px;">Submit CMS-64 Data &rarr;</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 2.55 SAMPLE OUTPUT TEASER ═══ -->
+<section id="sample-output" style="background:var(--surface); padding:64px 32px; border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:48px; align-items:center;">
+      <div>
+        <div style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--green-700); margin-bottom:14px;">See What We Deliver</div>
+        <h2 style="font-family:var(--trajan); font-size:clamp(1.5rem,2.6vw,2rem); font-weight:500; color:var(--ink); line-height:1.25; letter-spacing:0.02em; text-transform:uppercase; margin:0 0 20px 0;">Sample Submission Defense Output</h2>
+        <p style="font-size:0.95rem; color:var(--gray-700); line-height:1.7; margin:0 0 16px 0;">Certix execution package: line-item variance attribution, FMAP-applied share computation, validation log, variance narratives and exception logs structured for federal audit defense and response submission.</p>
+        <p style="font-size:0.88rem; color:var(--gray-600); line-height:1.65; margin:0 0 24px 0;">Built against public CMS-64 line-item structures for multi-state Medicaid programs.</p>
+        <a href="certix-sample-output.html" style="font-size:0.78rem; color:var(--green-700); text-decoration:underline; font-weight:600;">View sample output &rarr;</a>
+      </div>
+      <div style="background:var(--gray-100); border:1px solid var(--gray-200); border-radius:6px; padding:24px; font-family:'SF Mono',Menlo,Consolas,monospace; font-size:0.72rem; line-height:1.8; color:var(--gray-800);">
+        <div style="font-weight:700; color:var(--ink); margin-bottom:10px; font-family:var(--sans); font-size:0.7rem; text-transform:uppercase; letter-spacing:1.2px;">Submission Defense Package &mdash; Revenue captured &middot; Variance controlled</div>
+        <div>CMS-64.xlsx</div>
+        <div>variance_attribution.csv</div>
+        <div>validation_log.json</div>
+        <div>audit_trail.pdf</div>
+        <div>prior_period_delta.xlsx</div>
+        <div>submission_defense_manifest.json</div>
+        <div style="margin-top:14px; padding-top:12px; border-top:1px solid var(--gray-300); font-family:var(--sans); font-size:0.7rem; color:var(--green-700); font-weight:600;">16 / 16 checks passed &middot; revenue captured &middot; variance controlled</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 2.6 WHY NOW ═══ -->
+<section id="why-now" style="background:var(--surface-dark); padding:64px 32px;">
+  <div class="container">
+    <div style="max-width:760px;">
+      <div style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:rgba(255,255,255,0.45); margin-bottom:14px;">
+        WHY NOW
+      </div>
+      <h2 style="font-family:var(--trajan); font-size:clamp(1.5rem,2.6vw,2rem); font-weight:500; color:#F1F3F5; line-height:1.25; letter-spacing:0.02em; text-transform:uppercase; margin:0 0 24px 0;">Why this matters now</h2>
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.85); line-height:1.75; margin:0 0 18px 0;">
+        CMS reporting requirements have tightened. T-MSIS V4.0 is enforced. OBA scoring ties submission quality directly to federal funding outcomes. 60-day response windows are now standard on flagged submissions.
+      </p>
+      <p style="font-size:0.95rem; color:rgba(255,255,255,0.85); line-height:1.75; margin:0 0 20px 0;">
+        Uncaptured revenue and undefended variance compound across cycles. Each submission without pre-audit variance attribution increases federal review exposure and remediation cost.
+      </p>
+      <p style="font-size:0.98rem; font-weight:500; color:#F1F3F5; line-height:1.6; margin:0; padding-left:14px; border-left:2px solid var(--green-500);">
+        Revenue capture and submission defensibility are now funding risks, not operational details.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 3. EXECUTION LAYER ═══ -->
+<section style="background:var(--surface); padding:72px 32px 0;" id="execution">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Execution Layer</div>
+      <div class="section-title">We capture revenue, control variance, and return defensible outputs.<br>You own the program.</div>
+      <div class="section-sub">Certix executes CMS-64 revenue capture, variance control, and submission defense. Defensible output in 5 business days.</div>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Revenue Capture &amp; Variance Attribution</h3>
+        <p>Underreported federal share identified and recovered. CMS-64 and T-MSIS packages reconciled against current CMS validation rules with line-level variance attribution.</p>
+        <div class="outcome">Revenue captured. Variance controlled. Output defensible.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Reporting Workload Absorbed</h3>
+        <p>Reporting cycles run on Certix capacity. Volume scales per cycle, not per hire. No staffing delays during reporting windows.</p>
+        <div class="outcome">Capacity without hiring risk. No missed cycles.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>Audit Documentation Included</h3>
+        <p>Data lineage, transformation logic, and submission defense evidence ship with every deliverable. Reduces audit exposure from day one.</p>
+        <div class="outcome">Audit-ready at delivery. No reconstruction needed.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">04</div>
+        <h3>Current CMS Rules</h3>
+        <p>Submission defense built against current CMS acceptance criteria. Executed under prime governance. No outdated rule sets.</p>
+        <div class="outcome">Rejection risk reduced at delivery.</div>
+      </div>
+    </div>
+
+    <!-- COMPLIANCE -->
+    <div class="comp-row">
+      <div class="comp-cell">
+        <div class="comp-ref">Data Handling</div>
+        <h3>US-Based Processing</h3>
+        <p>Stateless architecture. No persistent storage of government data.</p>
+      </div>
+      <div class="comp-cell">
+        <div class="comp-ref">Auditability</div>
+        <h3>Rejection Defense</h3>
+        <p>Deliverables structured for federal audit review and formal response submission.</p>
+      </div>
+      <div class="comp-cell">
+        <div class="comp-ref">Governance</div>
+        <h3>Regulatory Alignment</h3>
+        <p>Aligned to current CMS reporting structures and validation expectations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DEFERRAL RESPONSE SUPPORT ═══ -->
+<section style="background:var(--surface-alt); border-top:1px solid var(--line); padding:48px 32px;">
+  <div class="container">
+    <div style="max-width:720px;">
+      <div style="font-size:0.62rem; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; color:var(--green-700); margin-bottom:14px;">Deferral Response Support</div>
+      <div style="display:flex; flex-direction:column; gap:12px;">
+        <div style="display:flex; align-items:flex-start; gap:12px;">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">Documentation aligned to CMS deferral response requirements</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px;">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">Structured outputs for 60-day resolution windows</span>
+        </div>
+        <div style="display:flex; align-items:flex-start; gap:12px;">
+          <span style="color:var(--green-600); font-weight:700; flex-shrink:0;">&rarr;</span>
+          <span style="font-size:0.88rem; color:var(--ink-body); line-height:1.55;">Variance attribution supporting release workflows</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 3.7 ENGAGEMENT STRUCTURES ═══ -->
+<section style="background:var(--surface); padding:40px 32px 72px;" id="offers">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Engagement Structures</div>
+      <div class="section-title">Three engagement structures.<br>Capture revenue. Control variance. Defend the output.</div>
+      <div class="section-sub">Fixed-scope engagement paths for CMS-64 revenue capture, variance control, and defensible submission outputs.</div>
+      <p style="font-size:0.88rem; color:var(--gray-600); font-weight:400; margin-top:16px; font-style:italic;">Most revenue loss and compliance failures surface after submission — when correction cost is highest and federal review exposure is already locked in.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:0; margin-top:48px; border:1px solid var(--gray-200);">
+
+      <!-- ENGAGEMENT 01 — PER SUBMISSION -->
+      <div id="offer-01" style="padding:36px 32px; border-right:1px solid var(--gray-200); display:flex; flex-direction:column; scroll-margin-top:90px;">
+        <h3 style="font-family:var(--serif); font-size:1.4rem; font-weight:500; color:var(--gray-900); margin-bottom:12px; line-height:1.2; letter-spacing:-0.3px;">Per Submission</h3>
+        <p style="font-size:0.88rem; color:var(--gray-700); font-weight:400; line-height:1.6; margin-bottom:20px;">Fixed-fee revenue capture, variance control, and defensible CMS-64 output. Identify underreported federal share and attribute variance before submission. 5-day turnaround.</p>
+        <div style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:1.2px; color:var(--gray-500); margin-bottom:8px;">What you get</div>
+        <ul style="list-style:none; padding:0; margin:0 0 24px 0; font-size:0.82rem; color:var(--gray-700); line-height:1.6;">
+          <li>&bull; Submission workbook + exception log</li>
+          <li>&bull; Variance narratives structured for federal review</li>
+          <li>&bull; Submission-defense ready output</li>
+        </ul>
+        <div style="margin-top:auto;">
+          <a href="#contact?offer=per-submission" onclick="selectOffer('per-submission')" style="font-size:0.78rem; color:var(--green-700); font-weight:600; text-decoration:underline;">Submit CMS-64 Data &rarr;</a>
+        </div>
+      </div>
+
+      <!-- ENGAGEMENT 02 — MIGRATION SUPPORT (DEFAULT ENTRY POINT) -->
+      <div id="offer-02" style="padding:36px 32px; border-right:1px solid var(--line); display:flex; flex-direction:column; background:var(--surface-alt); position:relative; scroll-margin-top:90px;">
+        <div style="position:absolute; top:0; left:0; right:0; height:3px; background:var(--green-700);"></div>
+        <div style="display:inline-block; font-size:0.6rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; color:var(--green-700); background:var(--green-100); padding:4px 10px; margin-bottom:12px; width:fit-content;">Recommended</div>
+        <h3 style="font-family:var(--serif); font-size:1.4rem; font-weight:500; color:var(--gray-900); margin-bottom:12px; line-height:1.2; letter-spacing:-0.3px;">Migration Support</h3>
+        <p style="font-size:0.88rem; color:var(--gray-700); font-weight:400; line-height:1.6; margin-bottom:20px;">Mapping and reconciliation for new reporting templates, T-MSIS transitions, and CMS-64 structure changes. Revenue capture, variance control, and defensible output included.</p>
+        <div style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:1.2px; color:var(--gray-500); margin-bottom:8px;">What you get</div>
+        <ul style="list-style:none; padding:0; margin:0 0 24px 0; font-size:0.82rem; color:var(--gray-700); line-height:1.6;">
+          <li>&bull; Full variance attribution + T-MSIS bridge mapping</li>
+          <li>&bull; Variance attribution with quantified federal share exposure</li>
+          <li>&bull; Exception logs aligned to OBA scoring criteria</li>
+          <li>&bull; Submission-defense documentation package</li>
+        </ul>
+        <div style="margin-top:auto;">
+          <a href="#contact?offer=migration-support" onclick="selectOffer('migration-support')" style="font-size:0.78rem; color:var(--green-700); font-weight:600; text-decoration:underline;">Submit CMS-64 Data &rarr;</a>
+        </div>
+      </div>
+
+      <!-- ENGAGEMENT 03 — CAP / RECOVERY SUPPORT -->
+      <div id="offer-03" style="padding:36px 32px; display:flex; flex-direction:column; scroll-margin-top:90px;">
+        <h3 style="font-family:var(--serif); font-size:1.4rem; font-weight:500; color:var(--gray-900); margin-bottom:12px; line-height:1.2; letter-spacing:-0.3px;">CAP / Recovery Support</h3>
+        <p style="font-size:0.88rem; color:var(--gray-700); font-weight:400; line-height:1.6; margin-bottom:20px;">Targeted variance attribution for programs under federal review, corrective action plans, or active deferral resolution. Defense-grade documentation.</p>
+        <div style="font-size:0.68rem; font-weight:700; text-transform:uppercase; letter-spacing:1.2px; color:var(--gray-500); margin-bottom:8px;">Who this is for</div>
+        <ul style="list-style:none; padding:0; margin:0 0 24px 0; font-size:0.82rem; color:var(--gray-700); line-height:1.6;">
+          <li>&bull; Programs under CMS corrective action or deferral</li>
+          <li>&bull; Federal review response within 60-day windows</li>
+          <li>&bull; Variance attribution supporting recovery workflows</li>
+        </ul>
+        <div style="margin-top:auto;">
+          <a href="#contact?offer=cap-recovery" onclick="selectOffer('cap-recovery')" style="font-size:0.78rem; color:var(--green-700); font-weight:600; text-decoration:underline;">Submit CMS-64 Data &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 4. ENGAGEMENT PROCESS ═══ -->
+<section class="proof" id="engagement">
+  <div class="container">
+    <div class="proof-inner">
+      <div class="proof-left">
+        <div class="section-label">Engagement Process</div>
+        <h2 style="font-family:var(--serif); font-size:clamp(1.6rem,3vw,2.4rem); color:var(--white); margin-bottom:16px; line-height:1.12; letter-spacing:-0.3px;">How every engagement runs.</h2>
+        <p>Four phases. Revenue capture, variance control, and defensible output — in one fixed-scope motion.</p>
+        <p style="font-size:0.82rem; color:rgba(255,255,255,0.55); font-weight:400; margin-top:12px; line-height:1.6;">Deliverables structured for federal audit review and formal response submission.</p>
+        <p style="font-size:0.82rem; color:var(--green-400); font-weight:500; margin-top:10px; padding-left:14px; border-left:2px solid var(--green-500);">Supports OBA expenditure scoring targets and submission defensibility.</p>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:20px;">
+          <a href="#contact" class="btn btn-primary" style="background:var(--green-500);">Submit CMS-64 Data Securely</a>
+        </div>
+      </div>
+      <div class="proof-right">
+        <div class="timeline">
+          <div class="timeline-title">Engagement Structure</div>
+          <div class="timeline-steps">
+            <div class="tl-step">
+              <div class="tl-week">Phase 1 &mdash; Intake</div>
+              <div class="tl-desc">Scope, data sources, environment</div>
+            </div>
+            <div class="tl-step">
+              <div class="tl-week">Phase 2 &mdash; Mapping</div>
+              <div class="tl-desc">T-MSIS + CMS structure alignment</div>
+            </div>
+            <div class="tl-step">
+              <div class="tl-week">Phase 3 &mdash; Validation</div>
+              <div class="tl-desc">Validation checks, variance attribution</div>
+            </div>
+            <div class="tl-step">
+              <div class="tl-week">Phase 4 &mdash; Delivery</div>
+              <div class="tl-desc">Submission-defense package + variance narratives + audit documentation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ 5. PROCUREMENT (minimal) ═══ -->
+<div class="procurement" id="procurement">
+  <div class="proc-compact">
+    <div class="proc-info">
+      <div class="section-label">Procurement</div>
+      <div class="section-title" style="font-size:clamp(1.5rem,3vw,2rem);">Ready to deploy under your prime.</div>
+      <p style="font-size:0.88rem; color:var(--gray-700); line-height:1.65; margin:10px 0 0 0; max-width:440px;">No procurement cycle required. Scoped, priced, and deployable within your existing contract vehicle.</p>
+      <p style="font-size:0.78rem; color:var(--gray-600); font-weight:400; margin-top:12px; max-width:440px; line-height:1.55;">Typically funded under remediation, CAP, or compliance stabilization workstreams — not a new software line item.</p>
+      <a href="Certix-Systems-Capability-Statement-2026.pdf" style="display:block; margin-top:8px; font-size:0.75rem; color:var(--gray-500); text-decoration:underline;" download>Download Capability Statement (PDF)</a>
+    </div>
+    <div class="proc-table-card">
+      <table class="proc-table">
+        <tr><td>NAICS</td><td>541519 &bull; 541611 &bull; 541618<br><span style="font-size:0.68rem; font-weight:300; color:var(--gray-600); line-height:1.5;">541519 Other Computer Related Services &bull; 541611 Administrative &amp; General Management Consulting &bull; 541618 Other Management Consulting</span></td></tr>
+        <tr><td>Engagement Model</td><td>Fixed-scope &bull; Fixed-deliverable &bull; No open-ended retainers</td></tr>
+        <tr><td>Subcontract Role</td><td>Execution layer under prime governance &mdash; zero integration lift</td></tr>
+        <tr><td>Subcontracting Fit</td><td>CMS-64 revenue capture, variance attribution, submission defense</td></tr>
+        <tr><td>Availability</td><td>Deployable now under prime-led Medicaid system integrators</td></tr>
+        <tr><td>Risk Posture</td><td>No MES access &bull; No PHI &bull; No schema changes required</td></tr>
+        <tr><td>SDB</td><td>Small business, SDB-eligible (pending SAM registration)</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ 6. CONTACT ═══ -->
+<section class="contact-page" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Submit CMS-64 Data</div>
+      <div class="section-title">Submit your CMS-64 data.</div>
+      <div class="section-sub">Submit CMS-64 data and receive a defensible output package within 5 business days. Revenue captured, variance controlled, and outputs aligned to OBA scoring and federal response requirements.</div>
+    </div>
+
+    <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin:32px 0 40px 0;">
+      <a href="#contact" onclick="selectOffer('per-submission')" style="padding:10px 18px; background:var(--surface-alt); border:1px solid var(--line); font-size:0.74rem; font-weight:600; color:var(--ink); text-decoration:none; text-transform:uppercase; letter-spacing:1px;">&rsaquo; Per Submission</a>
+      <a href="#contact" onclick="selectOffer('migration-support')" style="padding:10px 18px; background:var(--surface-alt); border:1px solid var(--line); font-size:0.74rem; font-weight:600; color:var(--ink); text-decoration:none; text-transform:uppercase; letter-spacing:1px;">&rsaquo; Migration Support</a>
+      <a href="#contact" onclick="selectOffer('cap-recovery')" style="padding:10px 18px; background:var(--surface-alt); border:1px solid var(--line); font-size:0.74rem; font-weight:600; color:var(--ink); text-decoration:none; text-transform:uppercase; letter-spacing:1px;">&rsaquo; CAP / Recovery Support</a>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-form">
+        <h3>Data Review Request</h3>
+        <!-- ════════════════════════════════════════════════════════════════
+             FORM ENDPOINT — REPLACE BEFORE GO-LIVE
+             1. Sign up at https://formspree.io (free tier)
+             2. Create a new form, copy your endpoint URL
+             3. Replace YOUR_FORM_ID below with your form ID
+             ════════════════════════════════════════════════════════════════ -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="certix-contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Prime contractor or agency" required>
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <input type="text" id="role" name="role" placeholder="Program Manager, SBLO, Capture Lead..." required>
+          </div>
+          <div class="form-group">
+            <label for="program">Program Type / State</label>
+            <select id="program" name="program" required style="width:100%; padding:10px 12px; font-family:var(--sans); font-size:0.85rem; color:var(--ink-body); background:var(--surface); border:1px solid var(--line); border-radius:0;">
+              <option value="">Select a program...</option>
+              <option value="texas-medicaid">Texas Medicaid</option>
+              <option value="oklahoma-medicaid">Oklahoma Medicaid</option>
+              <option value="southeast-medicaid">Southeast State Medicaid</option>
+              <option value="midwest-medicaid">Midwest State Medicaid</option>
+              <option value="other-state">Other State Medicaid Program</option>
+              <option value="multi-state">Multi-State Program</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="offer">Engagement Structure of Interest</label>
+            <select id="offer" name="offer" required style="width:100%; padding:10px 12px; font-family:var(--sans); font-size:0.85rem; color:var(--ink-body); background:var(--surface); border:1px solid var(--line); border-radius:0;">
+              <option value="">Select an engagement structure...</option>
+              <option value="per-submission">Per Submission</option>
+              <option value="migration-support">Migration Support</option>
+              <option value="cap-recovery">CAP / Recovery Support</option>
+              <option value="discovery">Discovery — Evaluating Fit</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Reporting context</label>
+            <textarea id="message" name="message" placeholder="Reporting cycle, scope, current variance concerns, audit exposure, integration constraints..." required></textarea>
+          </div>
+          <!-- Honeypot field for spam protection -->
+          <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off">
+          <!-- Subject line for inbox -->
+          <input type="hidden" name="_subject" value="Certix Systems — Data Review Request">
+          <button type="submit" class="form-submit">Submit CMS-64 Data Securely</button>
+          <p id="form-status" style="font-size:0.72rem; color:var(--gray-500); margin-top:10px; text-align:center; display:none;"></p>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Direct Contact</h3>
+        <p style="font-size:0.82rem; color:var(--gray-500); font-weight:400;">US-based secure environment. All inquiries confidential.</p>
+        <div class="contact-block" style="margin-top:16px;">
+          <h4>Email</h4>
+          <a href="mailto:hello@certixsystems.com">hello@certixsystems.com</a>
+        </div>
+        <!-- Phone block: uncomment and add Google Voice number before go-live
+        <div class="contact-block" style="margin-top:16px;">
+          <h4>Phone</h4>
+          <a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TRUST SIGNAL ═══ -->
+<div style="background:var(--surface-alt); border-top:1px solid var(--line); padding:20px 32px; text-align:center;">
+  <p style="font-size:0.78rem; color:var(--gray-600); font-weight:500; margin:0;">Outputs structured for revenue capture, variance control, submission defense, and federal review standards.</p>
+  <p style="font-size:0.74rem; color:var(--gray-500); font-weight:400; margin:6px 0 0 0;">Security posture aligned to federal data environment expectations.</p>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <p>&copy; 2026 Certix Systems. All Rights Reserved. US-Based Workforce. No Offshore Processing. &nbsp;&middot;&nbsp; NAICS 541519 &middot; 541611 &middot; 541618</p>
+    <div class="footer-links">
+      <a href="mailto:hello@certixsystems.com">hello@certixsystems.com</a>
+      <span style="color:rgba(255,255,255,0.2);">Privacy Policy</span>
+      <span style="color:rgba(255,255,255,0.2);">Terms of Service</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  document.querySelector('.sun-icon').style.display = isDark ? 'block' : 'none';
+  document.querySelector('.moon-icon').style.display = isDark ? 'none' : 'block';
+  try { localStorage.setItem('certix-theme', isDark ? 'light' : 'dark'); } catch(e) {}
+}
+(function() {
+  try {
+    const saved = localStorage.getItem('certix-theme');
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.sun-icon').style.display = 'none';
+        document.querySelector('.moon-icon').style.display = 'block';
+      });
+    }
+  } catch(e) {}
+})();
+
+// ═══ Offer routing — auto-select dropdown when offer card is clicked ═══
+function selectOffer(offerValue) {
+  setTimeout(function() {
+    var sel = document.getElementById('offer');
+    if (sel) {
+      sel.value = offerValue;
+      sel.style.background = '#F5F3EE';
+      setTimeout(function(){ sel.style.background = '#FFFFFF'; }, 1500);
+    }
+  }, 400);
+}
+// On page load, check URL hash for ?offer= parameter
+(function(){
+  if (window.location.hash && window.location.hash.indexOf('offer=') > -1) {
+    var match = window.location.hash.match(/offer=([a-z0-9-]+)/);
+    if (match && match[1]) {
+      document.addEventListener('DOMContentLoaded', function(){ selectOffer(match[1]); });
+    }
+  }
+})();
+
+// ═══ Contact form (Formspree AJAX) ═══
+(function(){
+  var form = document.getElementById('certix-contact-form');
+  if (!form) return;
+  var status = document.getElementById('form-status');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    // Safety guard: prevent submission if Formspree endpoint is still the placeholder
+    if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
+      status.style.display = 'block';
+      status.style.color = '#B91C1C';
+      status.textContent = 'Form is not yet connected. Please email hello@certixsystems.com directly.';
+      console.error('[Certix] Formspree endpoint placeholder detected. Replace YOUR_FORM_ID in form action before deployment.');
+      return;
+    }
+    var data = new FormData(form);
+    status.style.display = 'block';
+    status.style.color = 'var(--gray-600)';
+    status.textContent = 'Sending...';
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response){
+      if (response.ok) {
+        form.reset();
+        status.style.color = 'var(--green-700)';
+        status.textContent = 'Received. We\u2019ll respond within 48 hours.';
+      } else {
+        response.json().then(function(d){
+          status.style.color = '#B91C1C';
+          status.textContent = (d.errors && d.errors.length) ? d.errors.map(function(x){return x.message;}).join(', ') : 'Request failed. Please email hello@certixsystems.com.';
+        });
+      }
+    }).catch(function(){
+      status.style.color = '#B91C1C';
+      status.textContent = 'Network error. Please email hello@certixsystems.com.';
+    });
+  });
+})();
+</script>
+</body>
+</html>
