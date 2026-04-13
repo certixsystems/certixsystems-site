@@ -426,6 +426,35 @@
     /* ─── 8. Engagement cards + misc mobile fixes ─── */
     .engagement-models-grid { grid-template-columns: 1fr !important; }
     .container { padding-left: 0 !important; padding-right: 0 !important; }
+
+    /* ─── 9. Sample Output section — stack + contain on mobile ─── */
+    .sample-output-grid {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+    }
+    .sample-output-card {
+      padding: 16px !important;
+      font-size: 0.65rem !important;
+      line-height: 1.7 !important;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      min-width: 0;
+    }
+    .sample-output-title {
+      font-size: 0.58rem !important;
+      letter-spacing: 0.8px !important;
+      line-height: 1.4 !important;
+    }
+    .sample-output-status {
+      font-size: 0.6rem !important;
+      line-height: 1.4 !important;
+    }
+
+    /* ─── 10. Hamburger menu — light green like "Systems" ─── */
+    .hamburger span {
+      background: rgba(143,204,170,0.95) !important;
+      height: 2.5px !important;
+    }
   }
 </style>
 </head>
@@ -931,7 +960,7 @@
 <!-- ═══ 2.55 SAMPLE OUTPUT TEASER ═══ -->
 <section id="sample-output" style="background:var(--surface); padding:64px 32px; border-bottom:1px solid var(--line);">
   <div class="container">
-    <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:48px; align-items:center;">
+    <div class="sample-output-grid" style="display:grid; grid-template-columns:1fr 1.2fr; gap:48px; align-items:center;">
       <div>
         <div style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--green-700); margin-bottom:14px;">See What We Deliver</div>
         <h2 style="font-family:var(--trajan); font-size:clamp(1.5rem,2.6vw,2rem); font-weight:500; color:var(--ink); line-height:1.25; letter-spacing:0.02em; text-transform:uppercase; margin:0 0 20px 0;">Sample Submission Defense Output</h2>
@@ -939,15 +968,15 @@
         <p style="font-size:0.88rem; color:var(--gray-600); line-height:1.65; margin:0 0 24px 0;">Built against public CMS-64 line-item structures for multi-state Medicaid programs.</p>
         <a href="certix-sample-output.html" style="font-size:0.78rem; color:var(--green-700); text-decoration:underline; font-weight:600;">View sample output &rarr;</a>
       </div>
-      <div style="background:var(--gray-100); border:1px solid var(--gray-200); border-radius:6px; padding:24px; font-family:'SF Mono',Menlo,Consolas,monospace; font-size:0.72rem; line-height:1.8; color:var(--gray-800);">
-        <div style="font-weight:700; color:var(--ink); margin-bottom:10px; font-family:var(--sans); font-size:0.7rem; text-transform:uppercase; letter-spacing:1.2px;">Submission Defense Package &mdash; Revenue captured &middot; Variance controlled</div>
+      <div class="sample-output-card" style="background:var(--gray-100); border:1px solid var(--gray-200); border-radius:6px; padding:24px; font-family:'SF Mono',Menlo,Consolas,monospace; font-size:0.72rem; line-height:1.8; color:var(--gray-800);">
+        <div class="sample-output-title" style="font-weight:700; color:var(--ink); margin-bottom:10px; font-family:var(--sans); font-size:0.7rem; text-transform:uppercase; letter-spacing:1.2px;">Submission Defense Package &mdash; Revenue captured &middot; Variance controlled</div>
         <div>CMS-64.xlsx</div>
         <div>variance_attribution.csv</div>
         <div>validation_log.json</div>
         <div>audit_trail.pdf</div>
         <div>prior_period_delta.xlsx</div>
         <div>submission_defense_manifest.json</div>
-        <div style="margin-top:14px; padding-top:12px; border-top:1px solid var(--gray-300); font-family:var(--sans); font-size:0.7rem; color:var(--green-700); font-weight:600;">16 / 16 checks passed &middot; revenue captured &middot; variance controlled</div>
+        <div class="sample-output-status" style="margin-top:14px; padding-top:12px; border-top:1px solid var(--gray-300); font-family:var(--sans); font-size:0.7rem; color:var(--green-700); font-weight:600;">16 / 16 checks passed &middot; revenue captured &middot; variance controlled</div>
       </div>
     </div>
   </div>
