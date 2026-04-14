@@ -143,11 +143,7 @@
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(13,31,21,0.92); -webkit-backdrop-filter: blur(20px) saturate(140%); backdrop-filter: blur(20px) saturate(140%); border-bottom: 1px solid rgba(143,204,170,0.18); }
   .nav-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; column-gap: 18px; padding: 0 32px; height: 72px; }
   .logo { display: inline-flex; align-items: center; gap: 0; text-decoration: none; border: none; padding: 8px 12px 5px 12px; }
-  .logo-lockup { display: inline-flex; flex-direction: column; align-items: stretch; }
-  .logo-wordmark { display: inline-flex; align-items: baseline; font-family: 'Audiowide', sans-serif; font-size: 36px; line-height: 1; letter-spacing: 0.015em; color: #8FCCAA; -webkit-text-stroke: 0.5px rgba(13,31,21,0.97); }
-  .logo-xmark { display: inline-block; width: 0.682em; height: 0.72em; margin-left: 0.016em; vertical-align: baseline; overflow: visible; color: inherit; flex-shrink: 0; }
-  .logo-divider { display: none; }
-  .logo-sub { display: block; font-family: 'Inter', system-ui, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 2.4px; text-transform: uppercase; color: rgba(143,204,170,0.95); margin-top: 2px; text-align: right; padding-right: 2px; }
+  .logo-mark { height: 54px; width: auto; flex-shrink: 0; }
   .nav-links { display: flex; justify-content: center; align-items: center; gap: 28px; margin-right: 0; }
   .nav-links a { color: rgba(255,255,255,0.78); text-decoration: none; font-size: 0.76rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.2px; }
   .nav-links a:hover { color: #FFFFFF; }
@@ -324,7 +320,6 @@
   [data-theme="dark"] .nav-links a { color: rgba(255,255,255,0.78); }
   [data-theme="dark"] .nav-links a:hover { color: #FFFFFF; }
   [data-theme="dark"] .nav-links.open { background: var(--surface); border-bottom-color: var(--line); }
-  [data-theme="dark"] .logo-wordmark { color: var(--ink); -webkit-text-stroke: 0.5px rgba(13,31,21,0.97); }
   [data-theme="dark"] .btn-outline { color: var(--ink-muted); border-color: var(--gray-300); }
   [data-theme="dark"] .btn-outline:hover { border-color: var(--gray-600); color: var(--ink-body); }
   [data-theme="dark"] .hamburger span { background: var(--ink-body); }
@@ -355,8 +350,7 @@
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .logo { padding: 4px 0; min-width: 0; }
-    .logo-wordmark { font-size: 28px; }
-    .logo-sub { font-size: 8px; letter-spacing: 1.8px; }
+    .logo-mark { height: 38px; }
     .theme-toggle { margin-left: 0; }
 
     /* ─── 2. Mobile Menu Drawer ─── */
@@ -477,11 +471,57 @@
 <nav>
   <div class="nav-inner">
     <a href="#" class="logo">
-      <span class="logo-lockup">
-        <span class="logo-wordmark">CERTI<svg class="logo-xmark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="xdiag1" gradientUnits="userSpaceOnUse" x1="9" y1="9" x2="91" y2="91"><stop offset="0" stop-color="#2D6347"/><stop offset="1" stop-color="#8FCCAA"/></linearGradient><linearGradient id="xdiag2" gradientUnits="userSpaceOnUse" x1="9" y1="91" x2="91" y2="9"><stop offset="0" stop-color="#2D6347"/><stop offset="1" stop-color="#8FCCAA"/></linearGradient></defs><line x1="9" y1="91" x2="91" y2="9" stroke="url(#xdiag2)" stroke-width="22" stroke-linecap="butt"/><line x1="9" y1="9" x2="91" y2="91" stroke="url(#xdiag1)" stroke-width="22" stroke-linecap="butt"/></svg></span>
-        <span class="logo-divider"></span>
-        <span class="logo-sub">Systems</span>
-      </span>
+      <svg class="logo-mark" viewBox="0 0 340 82" xmlns="http://www.w3.org/2000/svg">
+        <!-- CX touching lockup: no bars, tight kerning -->
+        <text class="logo-cx" x="0" y="62" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="bold" font-size="66">
+          <tspan fill="#8FCCAA">C</tspan><tspan class="logo-x" fill="#4A9B72" dx="-5">X</tspan>
+        </text>
+        <!-- Arrow -- bigger, lighter green accent -->
+        <polygon class="logo-arrow" points="0,0 16,13 0,26" fill="#64AF8A" transform="translate(100,24)"/>
+        <!-- Divider -- thinner -->
+        <rect class="logo-divider" x="126" y="8" width="1" height="60" fill="rgba(80,140,110,0.5)"/>
+        <!-- CERTIX -- top aligns with CX top -->
+        <text class="logo-certix" x="136" y="35" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="28" fill="#8FCCAA" letter-spacing="1">CERTIX</text>
+        <!-- SYSTEMS -- bottom aligns with CX bottom, gap matches arrow -->
+        <text class="logo-systems" x="136" y="62" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="24" fill="rgba(143,204,170,0.92)" letter-spacing="0.8">SYSTEMS</text>
+        <script>
+          function layoutLogo() {
+            var svg = document.querySelector('.logo-mark');
+            var cx = svg.querySelector('.logo-cx');
+            var arrow = svg.querySelector('.logo-arrow');
+            var divider = svg.querySelector('.logo-divider');
+            var certix = svg.querySelector('.logo-certix');
+            var systems = svg.querySelector('.logo-systems');
+            if (!cx) return;
+            var b = cx.getBBox();
+            var arrowW = 16, arrowH = 26, gap1 = 5;
+            var ax = b.x + b.width + gap1;
+            var ay = b.y + (b.height - arrowH) / 2;
+            arrow.setAttribute('transform', 'translate(' + ax + ',' + ay + ')');
+            var dGap = 5;
+            var dx = ax + arrowW + dGap;
+            divider.setAttribute('x', dx);
+            divider.setAttribute('y', b.y + 4);
+            divider.setAttribute('height', b.height - 8);
+            var tGap = 10;
+            var tx = dx + 2 + tGap;
+            certix.setAttribute('x', tx);
+            systems.setAttribute('x', tx);
+            var cb = certix.getBBox();
+            var sb = systems.getBBox();
+            var pad = 3;
+            var rightEdge = Math.max(tx + cb.width, tx + sb.width) + pad;
+            var bottomEdge = Math.max(b.y + b.height, sb.y + sb.height) + pad;
+            svg.setAttribute('viewBox', '0 0 ' + rightEdge + ' ' + bottomEdge);
+          }
+          if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(layoutLogo);
+          } else {
+            window.addEventListener('load', layoutLogo);
+          }
+          document.addEventListener('DOMContentLoaded', layoutLogo);
+        </script>
+      </svg>
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#execution">How It Works</a>
