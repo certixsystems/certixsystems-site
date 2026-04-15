@@ -484,9 +484,9 @@
         <!-- Divider -- thinner -->
         <rect class="logo-divider" x="126" y="8" width="1" height="60" fill="rgba(80,140,110,0.5)"/>
         <!-- CERTIX -- top aligns with CX top -->
-        <text class="logo-certix" x="136" y="35" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="28" fill="#8FCCAA" letter-spacing="1">CERTIX</text>
+        <text class="logo-certix" x="136" y="35" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="28" fill="#6BA88C" lengthAdjust="spacing">CERTIX</text>
         <!-- SYSTEMS -- bottom aligns with CX bottom, gap matches arrow -->
-        <text class="logo-systems" x="136" y="62" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="24" fill="rgba(143,204,170,0.92)" letter-spacing="0.8">SYSTEMS</text>
+        <text class="logo-systems" x="136" y="62" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="24" fill="#6BA88C" letter-spacing="0.8">SYSTEMS</text>
         <script>
           function layoutLogo() {
             var svg = document.querySelector('.logo-mark');
@@ -513,9 +513,12 @@
             var cb = certix.getBBox();
             var sb = systems.getBBox();
             var pad = 3;
-            var rightEdge = Math.max(tx + cb.width, tx + sb.width) + pad;
+            var // Align CERTIX right edge to SYSTEMS right edge
+            var sysW = systems.getComputedTextLength();
+            if (sysW > 0) { certix.setAttribute('textLength', sysW); cb = certix.getBBox(); }
+            rightEdge = Math.max(tx + cb.width, tx + sb.width) + pad;
             var bottomEdge = Math.max(b.y + b.height, sb.y + sb.height) + pad;
-            svg.setAttribute('viewBox', '0 0 ' + rightEdge + ' ' + bottomEdge);
+            svg.svg.setAttribute('viewBox', '0 0 ' + rightEdge + ' ' + bottomEdge);
           }
           if (document.fonts && document.fonts.ready) {
             document.fonts.ready.then(layoutLogo);
