@@ -458,7 +458,7 @@
               <text x="136" y="62" font-family="'Lato','Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="24" fill="#6BA88C" letter-spacing="0.8">SYSTEMS</text>
             </svg>
           </a>
-          <script>document.fonts&&document.fonts.ready.then(function(){var t=document.querySelectorAll("nav svg text"),s=t[2],c=t[1];if(s&&c){var w=s.getComputedTextLength();if(w>0)c.setAttribute("textLength",w)}});</script>
+          <script>function alignLogo(){var t=document.querySelectorAll("nav svg text");if(t.length>2){var s=t[2],c=t[1],w=s.getComputedTextLength();if(w>0)c.setAttribute("textLength",w)}}window.addEventListener("load",function(){alignLogo();setTimeout(alignLogo,200)});</script>
         <a href="https://certixsystems.com" class="nav-back">← Back to certixsystems.com</a>
     </nav>
 
