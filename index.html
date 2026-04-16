@@ -515,7 +515,7 @@
             var pad = 3;
             var rightEdge = Math.max(tx + cb.width, tx + sb.width) + pad;
             var bottomEdge = Math.max(b.y + b.height, sb.y + sb.height) + pad;
-            svg.svg.setAttribute('viewBox', '0 0 ' + rightEdge + ' ' + bottomEdge);
+            svg.setAttribute('viewBox', '0 0 ' + rightEdge + ' ' + bottomEdge);
           }
           if (document.fonts && document.fonts.ready) {
             document.fonts.ready.then(layoutLogo);
