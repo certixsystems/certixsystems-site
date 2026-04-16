@@ -516,6 +516,7 @@
             var rightEdge = Math.max(tx + cb.width, tx + sb.width) + pad;
             var bottomEdge = Math.max(b.y + b.height, sb.y + sb.height) + pad;
             svg.setAttribute('viewBox', '0 0 ' + rightEdge + ' ' + bottomEdge);
+                        if(typeof alignCX==='function')alignCX();
           }
           if (document.fonts && document.fonts.ready) {
             document.fonts.ready.then(layoutLogo);
@@ -526,6 +527,7 @@
           function alignCX(){var c=document.querySelector('.logo-certix'),s=document.querySelector('.logo-systems');if(c&&s){var w=s.getComputedTextLength();if(w>0){c.setAttribute('textLength',w);}}}
           if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){alignCX();setTimeout(alignCX,200);});}
           window.addEventListener('load',function(){alignCX();setTimeout(alignCX,300);});
+                    window.addEventListener('resize',function(){setTimeout(alignCX,100);});
         </script>
       </svg>
     </a>
